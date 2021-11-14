@@ -30,7 +30,7 @@ const particlesOptions = {
     "composite": "destination-out",
     "cover": {
       "color": {
-        "value": "#fff"
+        "value": "#FFA500"
       },
       "opacity": 1
     },
