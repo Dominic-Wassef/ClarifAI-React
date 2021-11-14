@@ -34,7 +34,7 @@ const particlesOptions = {
         distance: 400,
         duration: 2,
         opacity: 0.5,
-        size: 40,
+        size: 10,
       },
       grab: {
         distance: 400,
