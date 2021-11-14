@@ -84,7 +84,7 @@ const particlesOptions = {
       },
       animation: {
         enable: true,
-        speed: 3,
+        speed: 0.5,
         minimumValue: 0.1,
       },
     },
@@ -98,7 +98,7 @@ const particlesOptions = {
       },
       animation: {
         enable: true,
-        speed: 20,
+        speed: 5,
         minimumValue: 0.1,
       },
     },
