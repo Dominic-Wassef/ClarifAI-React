@@ -56,8 +56,8 @@ const particlesOptions = {
     move: {
       attract: {
         rotate: {
-          x: 600,
-          y: 1200,
+          x: 60,
+          y: 200,
         },
       },
       enable: true,
