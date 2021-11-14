@@ -18,7 +18,7 @@ const particlesOptions = {
   "autoPlay": true,
   "background": {
     "color": {
-      "value": "#000"
+      "value": "#FFA500"
     },
     "image": "",
     "position": "",
