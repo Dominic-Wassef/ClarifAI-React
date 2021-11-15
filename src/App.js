@@ -47,18 +47,18 @@ const particlesOptions = {
     "detectsOn": "window",
     "events": {
       "onClick": {
-        "enable": false,
-        "mode": "push"
+        "enable": true,
+        "mode": "repulse"
       },
       "onDiv": {
-        "selectors": "#repulse-div",
-        "enable": true,
-        "mode": "repulse",
+        "selectors": [],
+        "enable": false,
+        "mode": [],
         "type": "circle"
       },
       "onHover": {
-        "enable": false,
-        "mode": "repulse",
+        "enable": true,
+        "mode": "bubble",
         "parallax": {
           "enable": false,
           "force": 2,
@@ -81,10 +81,10 @@ const particlesOptions = {
       },
       "bubble": {
         "distance": 400,
-        "duration": 2,
+        "duration": 0.3,
         "mix": false,
-        "opacity": 0.8,
-        "size": 40
+        "opacity": 1,
+        "size": 4
       },
       "connect": {
         "distance": 80,
@@ -98,7 +98,7 @@ const particlesOptions = {
         "links": {
           "blink": false,
           "consent": false,
-          "opacity": 1
+          "opacity": 0.5
         }
       },
       "light": {
@@ -197,7 +197,7 @@ const particlesOptions = {
       }
     },
     "color": {
-      "value": "#ffffff",
+      "value": "#fff",
       "animation": {
         "h": {
           "count": 0,
@@ -273,8 +273,8 @@ const particlesOptions = {
         "value": "#ffffff"
       },
       "consent": false,
-      "distance": 150,
-      "enable": true,
+      "distance": 500,
+      "enable": false,
       "frequency": 1,
       "opacity": 0.4,
       "shadow": {
@@ -288,7 +288,7 @@ const particlesOptions = {
         "enable": false,
         "frequency": 1
       },
-      "width": 1,
+      "width": 2,
       "warp": false
     },
     "move": {
@@ -306,7 +306,7 @@ const particlesOptions = {
       },
       "decay": 0,
       "distance": {},
-      "direction": "none",
+      "direction": "bottom",
       "drift": 0,
       "enable": true,
       "gravity": {
@@ -359,7 +359,7 @@ const particlesOptions = {
         "factor": 1000
       },
       "limit": 0,
-      "value": 80
+      "value": 400
     },
     "opacity": {
       "random": {
@@ -372,8 +372,8 @@ const particlesOptions = {
       },
       "animation": {
         "count": 0,
-        "enable": true,
-        "speed": 3,
+        "enable": false,
+        "speed": 1,
         "sync": false,
         "destroy": "none",
         "startValue": "random",
@@ -459,13 +459,13 @@ const particlesOptions = {
         "minimumValue": 1
       },
       "value": {
-        "min": 0.1,
-        "max": 5
+        "min": 1,
+        "max": 10
       },
       "animation": {
         "count": 0,
-        "enable": true,
-        "speed": 20,
+        "enable": false,
+        "speed": 40,
         "sync": false,
         "destroy": "none",
         "startValue": "random",
