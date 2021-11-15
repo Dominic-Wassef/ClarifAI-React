@@ -18,11 +18,12 @@ const particlesOptions = {
   "autoPlay": true,
   "background": {
     "color": {
-      "value": "#232741"
+      "value": "#0d47a1"
     },
+    "image": "",
     "position": "50% 50%",
     "repeat": "no-repeat",
-    "size": "20%",
+    "size": "cover",
     "opacity": 1
   },
   "backgroundMask": {
@@ -46,18 +47,18 @@ const particlesOptions = {
     "detectsOn": "window",
     "events": {
       "onClick": {
-        "enable": true,
-        "mode": "repulse"
+        "enable": false,
+        "mode": "push"
       },
       "onDiv": {
-        "selectors": [],
-        "enable": false,
-        "mode": [],
+        "selectors": "#repulse-div",
+        "enable": true,
+        "mode": "repulse",
         "type": "circle"
       },
       "onHover": {
-        "enable": true,
-        "mode": "bubble",
+        "enable": false,
+        "mode": "repulse",
         "parallax": {
           "enable": false,
           "force": 2,
@@ -79,11 +80,11 @@ const particlesOptions = {
         "distance": 200
       },
       "bubble": {
-        "distance": 250,
+        "distance": 400,
         "duration": 2,
         "mix": false,
-        "opacity": 0,
-        "size": 0
+        "opacity": 0.8,
+        "size": 40
       },
       "connect": {
         "distance": 80,
@@ -128,7 +129,7 @@ const particlesOptions = {
         "quantity": 2
       },
       "repulse": {
-        "distance": 400,
+        "distance": 200,
         "duration": 0.4,
         "factor": 100,
         "speed": 1,
@@ -273,7 +274,7 @@ const particlesOptions = {
       },
       "consent": false,
       "distance": 150,
-      "enable": false,
+      "enable": true,
       "frequency": 1,
       "opacity": 0.4,
       "shadow": {
@@ -300,7 +301,7 @@ const particlesOptions = {
         "enable": false,
         "rotate": {
           "x": 600,
-          "y": 600
+          "y": 1200
         }
       },
       "decay": 0,
@@ -333,9 +334,9 @@ const particlesOptions = {
         "right": "out",
         "top": "out"
       },
-      "random": true,
+      "random": false,
       "size": false,
-      "speed": 1,
+      "speed": 2,
       "spin": {
         "acceleration": 0,
         "enable": false
@@ -358,7 +359,7 @@ const particlesOptions = {
         "factor": 1000
       },
       "limit": 0,
-      "value": 160
+      "value": 80
     },
     "opacity": {
       "random": {
@@ -366,17 +367,17 @@ const particlesOptions = {
         "minimumValue": 0.1
       },
       "value": {
-        "min": 0,
-        "max": 1
+        "min": 0.1,
+        "max": 0.5
       },
       "animation": {
         "count": 0,
         "enable": true,
-        "speed": 1,
+        "speed": 3,
         "sync": false,
         "destroy": "none",
         "startValue": "random",
-        "minimumValue": 0
+        "minimumValue": 0.1
       }
     },
     "orbit": {
@@ -458,17 +459,17 @@ const particlesOptions = {
         "minimumValue": 1
       },
       "value": {
-        "min": 1,
-        "max": 3
+        "min": 0.1,
+        "max": 5
       },
       "animation": {
         "count": 0,
-        "enable": false,
-        "speed": 4,
+        "enable": true,
+        "speed": 20,
         "sync": false,
         "destroy": "none",
         "startValue": "random",
-        "minimumValue": 0.3
+        "minimumValue": 0.1
       }
     },
     "stroke": {
